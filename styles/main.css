@@ -1,0 +1,54 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+#mynetwork {
+    width: 90%;
+    height: 70vh;
+    border: 1px solid lightgray;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+.input-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+#input {
+    width: 200px;
+    padding: 5px;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    padding: 5px;
+    margin-right: 10px;
+}
+
+#build {
+    width: 200px;
+    padding: 5px;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    padding: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#build:hover {
+    background-color: lightgray;
+}
+
+.mode {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
