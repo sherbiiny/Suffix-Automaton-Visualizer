@@ -55,7 +55,7 @@ class SuffixAutomaton {
     }
 
     dfs(v, curr) {
-        this.t[v].label = curr;
+        if(curr.length > this.t[v].label.length) this.t[v].label = curr;
         for(let j in this.t[v].nxt) {
             this.dfs(this.t[v].nxt[j], curr + j);
         }

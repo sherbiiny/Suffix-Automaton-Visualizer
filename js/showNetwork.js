@@ -3,7 +3,7 @@ let showNetwork = (nodes, edges) => {
 
     let data = {
         nodes: new vis.DataSet(nodes),
-        edges: new vis.DataSet(edges)
+        edges: new vis.DataSet(edges),
     };
 
     let options = {

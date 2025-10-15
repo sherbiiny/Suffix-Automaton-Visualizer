@@ -6,8 +6,10 @@ let buildGraph = (sa) => {
     for(let i = 0; i < sa.t.length; i++) {
         let color = sa.t[i].isClone ? 'lightblue' : 'lightgreen';
         if(!i) color = 'dodgerblue';
-        nodes.push({id: i, label: sa.t[i].label, color: color});
+        nodes.push({id: i, label: sa.t[i].label + ' (' + sa.t[i].len + ')', color: color});
     }
+
+    console.log(nodes);
 
     for(let i = 0; i < sa.t.length; i++) {
         if(sa.t[i].link != -1) {
